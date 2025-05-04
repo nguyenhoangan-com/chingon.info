@@ -24,7 +24,7 @@
 
 body {
     margin: 0 19px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #main {
@@ -41,7 +41,11 @@ body {
 }
 
 a {
-    color: #00e;
+    color: #006847;
+}
+
+a:active {
+    color: black;
 }
 
 nav ul {
@@ -256,11 +260,11 @@ sup a {
     body,
     html {
         background-color: #1e1e1e;
-        color: #dedede;
+        color: #eee;
     }
 
     a {
-        color: #fff !important;
+        color: #ceffdf !important;
     }
 
     h1,
