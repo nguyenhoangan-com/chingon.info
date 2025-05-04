@@ -1,0 +1,313 @@
+@font-face {
+    font-family: Arial;
+    src: local('Arial'), url('/arial.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: Arial;
+    src: local('Arial'), url('/arialitalic.ttf');
+    font-weight: 400;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: Arial;
+    src: local('Arial'), url('/arialbold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    margin: 0 19px;
+    -webkit-font-smoothing: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-rendering: optimizeSpeed;
+}
+
+#main {
+    max-width: 1720px;
+}
+
+.cont {
+    max-width: 720px;
+}
+
+.hide,
+.skip {
+    display: none;
+}
+
+a {
+    color: #00e;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0;
+    display: flex;
+}
+
+nav li:after {
+    content: "›";
+    display: inline-block;
+    margin: 0 7px;
+    pointer-events: none;
+}
+
+nav li:last-of-type:after {
+    display: none;
+}
+
+footer,
+footer p,
+footer ul {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 18px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer svg {
+    fill: black;
+    height: 14px;
+    width: 14px;
+}
+
+footer table {
+    max-width: 1024px;
+    margin: 0;
+}
+
+footer table tr td:first-of-type {
+    width: 341px;
+    padding: 0 20px 0 0;
+}
+
+footer table tr td:nth-of-type(2) {
+    width: auto;
+    padding: 0;
+}
+
+footer .langSwitch {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+header.nosub {
+    margin-bottom: 72px;
+}
+
+.h1,
+h1 {
+    font-size: 48px;
+    line-height: 40px;
+    margin: 34px 0;
+}
+
+h1 + .h1 {
+    margin-top: -0.6em;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0.8em 0;
+}
+
+.h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 72px 0 0.8em;
+}
+
+.h4 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    margin: 72px 0 0.8em;
+}
+
+p,
+table,
+ul {
+    font-size: 23px;
+    line-height: 27px;
+    max-width: 1024px;
+}
+
+ol {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    columns: 2;
+    max-width: 715px;
+    column-gap: 15px;
+}
+
+ol li {
+    max-width: 350px;
+    break-inside: avoid-column;
+}
+
+table td {
+    vertical-align: top;
+}
+
+img {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+    -moz-image-rendering: crisp-edges;
+    margin-top: 48px;
+}
+
+figure {
+    margin: 26px 0;
+    display: inline-block;
+}
+
+figure img + img {
+    margin-top: -3%;
+}
+
+figcaption {
+    margin-top: 6px;
+    max-width: 720px;
+}
+
+figcaption p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+p img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+}
+
+sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.5em;
+    line-height: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+sup a {
+    text-decoration: none;
+}
+
+.footnotes {
+    margin-bottom: 48px;
+}
+
+.footnotes p {
+    display: inline;
+    font-size: 20px;
+    line-height: 22px;
+    hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+}
+
+.footnotes sup {
+    top: -0.2em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body,
+    html {
+        background-color: #1e1e1e;
+        color: #dedede;
+    }
+
+    a {
+        color: #fff !important;
+    }
+
+    footer svg {
+        fill: white !important;
+    }
+
+    .h3,
+    h1,
+    h2,
+    h4 {
+        color: #fff;
+    }
+
+    .lightvideo {
+        display: none;
+    }
+
+    .darkvideo {
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    picture {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    footer table tr td:first-of-type {
+        width: 190px;
+    }
+
+    footer ul {
+        padding-left: 1em;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    ol {
+        columns: 1;
+        font-size: 18px;
+    }
+
+    ol li {
+        max-width: 100%;
+    }
+
+    .h3 {
+        font-size: 24px;
+    }
+
+    .h4 {
+        font-size: 18px;
+    }
+
+    p,
+    table,
+    ul {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
