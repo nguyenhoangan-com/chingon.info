@@ -1,11 +1,13 @@
+// .eleventy.js
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("src/css"); // copy to _site/css
-  
-    return {
-      dir: {
-        input: "src",
-        output: "_site"
-      }
-    };
+  eleventyConfig.addPassthroughCopy("src/guide");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/image");
+
+  return {
+    dir: {
+      input: "src",
+      output: "_site"
+    }
   };
-  
+};
