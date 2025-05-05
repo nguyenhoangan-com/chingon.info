@@ -218,9 +218,9 @@ sup a {
 }
 
 /* Color contrast of 5.0 */
-
 body,
-html {
+html,
+:lang(en) {
     color: #000;
 }
 
@@ -244,6 +244,16 @@ h2,
 h3,
 h4 {
     color: #8b6800; /* Adapted */
+}
+
+header p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+header p strong,
+header :lang(es) strong {
+    color: #9e5c60; /*natural mix of black and red*/
 }
 
 @media (prefers-color-scheme: dark) {
@@ -270,7 +280,8 @@ h4 {
     }
 
     body,
-    html {
+    html,
+    :lang(en) {
         background-color: #1e1e1e;
         color: #dedede;
     }

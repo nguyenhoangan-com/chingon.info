@@ -185,12 +185,13 @@ sup a {
     top: -0.2em;
 }
 
+/* Color contrast of 5.0 */
 body,
-html {
+html,
+:lang(en) {
     color: #000;
 }
 
-/* Color contrast of 5.0 */
 a,
 header a {
     color: #356bcb; /* Adapted */
@@ -247,7 +248,8 @@ header :lang(es) strong {
     }
 
     body,
-    html {
+    html,
+    :lang(en) {
         background-color: #1e1e1e;
         color: #dedede;
     }
