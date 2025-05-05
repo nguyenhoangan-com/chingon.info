@@ -70,8 +70,8 @@ nav li:last-of-type:after {
 footer,
 footer p,
 footer ul {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 footer ul {
@@ -92,11 +92,6 @@ footer table tr td:first-of-type {
 footer table tr td:nth-of-type(2) {
     width: auto;
     padding: 0;
-}
-
-footer .langSwitch {
-    font-size: 16px;
-    line-height: 18px;
 }
 
 header.nosub {
