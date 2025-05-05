@@ -1,0 +1,24 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenhoangan-com/chingon.info.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenhoangan-com/chingon.info/issues"
+  },
+  "homepage": "https://github.com/nguyenhoangan-com/chingon.info#readme",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
