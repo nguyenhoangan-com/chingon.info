@@ -272,11 +272,6 @@ header :lang(nah) {
     :lang(en) {
         color: #dedede;
     }
-    
-    header p strong,
-    header :lang(es) strong {
-        color: #d98d56; /*natural mix of white and red*/
-    }
 }
 
 @media (max-width: 1023px) {

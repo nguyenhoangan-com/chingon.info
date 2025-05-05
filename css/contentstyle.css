@@ -214,6 +214,10 @@ header :lang(nah) {
     color: #8b6800; /* Adapted */
 }
 
+#strong-title strong {
+    color: #9e5c60; /*natural mix of black and red*/
+}
+
 @media (prefers-color-scheme: dark) {
     :lang(en) a, :lang(en) header a,
     :lang(es) a, :lang(es) header a,
@@ -246,8 +250,7 @@ header :lang(nah) {
         color: #dedede;
     }
     
-    header p strong,
-    header :lang(es) strong {
+    #strong-title strong {
         color: #d98d56; /*natural mix of white and red*/
     }
 }
