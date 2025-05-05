@@ -61,10 +61,6 @@ footer ul {
     padding: 0;
 }
 
-footer ul {
-    list-style: none;
-}
-
 footer table {
     max-width: 1024px;
     margin: 2em 0 0 0;
@@ -80,30 +76,33 @@ footer table tr td:nth-of-type(2) {
     padding: 0;
 }
 
-.h1,
-h1 {
+h1#home-title {
     font-size: 75px;
-    line-height: 0px;
+    line-height: 75px;
+    margin: 0;
 }
 
-h1 + .h1 {
-    margin-top: -0.6em;
+h1 {
+    font-size: 48px;
+    line-height: 40px;
 }
 
 h2 {
     font-size: 36px;
-    margin: 1.5em 0 .75em 0;
+    margin: 2em 0 .75em;
 }
 
 h3 {
     font-size: 28px;
     font-weight: 700;
+    margin: 1.2em 0 0.8em;
 }
 
 h4 {
     font-size: 20px;
     line-height: 27px;
     font-weight: 700;
+    margin: 1.2em 0 0.8em;
 }
 
 header,
@@ -118,6 +117,7 @@ ul {
     line-height: 27px;
     max-width: 1024px;
 }
+
 
 .subtitle p {
     line-height: 0px;
@@ -219,15 +219,15 @@ sup a {
 }
 
 /* Color contrast of 5.0 */
+/* Color contrast of 5.0 */
 body,
 html {
     color: #000;
     font-size: 18px;
 }
 
-:lang(en) a, :lang(en) header a,
-:lang(es) a, :lang(es) header a,
-:lang(nah) a, :lang(nah) header a {
+a,
+header a {
     color: #356bcb; /* Adapted */
 }
 
@@ -236,7 +236,7 @@ html {
 }
 
 :lang(nah),
-header :lang(nah) {
+:lang(yua) {
     color: #337d00; /* Adapted */
 }
 
@@ -244,10 +244,13 @@ h1, h2, h3, h4, nav {
     color: #8b6800; /* Adapted */
 }
 
+#strong-title strong {
+    color: #9e5c60; /*natural mix of black and red*/
+}
+
 @media (prefers-color-scheme: dark) {
-    :lang(en) a, :lang(en) header a,
-    :lang(es) a, :lang(es) header a,
-    :lang(nah) a, :lang(nah) header a {
+    a,
+    header a {
         color: #6bb1d1; /* From codex */
     }
 
@@ -256,7 +259,7 @@ h1, h2, h3, h4, nav {
     }
 
     :lang(nah),
-    header :lang(nah) {
+    :lang(yua) {
         color: #58b900; /* Adapted */
     }
 
@@ -268,6 +271,10 @@ h1, h2, h3, h4, nav {
     html {
         background-color: #1e1e1e;
         color: #dedede;
+    }
+    
+    #strong-title strong {
+        color: #d98d56; /*natural mix of white and red*/
     }
 }
 
@@ -285,6 +292,11 @@ h1, h2, h3, h4, nav {
 
     footer ul {
         padding: 0;
+    }
+
+    h1#home-title {
+        font-size: 50px;
+        line-height: 50px;
     }
 
     h1 {
@@ -320,7 +332,6 @@ h1, h2, h3, h4, nav {
         font-size: 20px;
         line-height: 24px;
     }
-
     .multi-column-section .column {
         flex: 1 1 100%;
     }

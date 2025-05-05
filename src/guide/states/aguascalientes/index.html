@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--descanse en paz mexperience.com de 2005-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>Aguascalientes guide at chingon.info</title>
-
         <meta name="description" content="A comprehensive guide to Aguascalientes, covering key attractions, local culture, food, and travel tips">
-        <meta name="robots" content="index, follow">
-
-        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
-        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E1E1E">
-
-        <link rel="stylesheet" href="/Users/nguyenhoangan/Documents/mexico/src/css/contentstyle.css">
+        {% include "meta-content.njk" %}
     </head>
     <body>
         <nav>
             <ul>
                 <li><a href="/">chingón.info</a></li>
                 <li><a href="/guide/">Guide</a></li>
+                <li><a href="/guide/states/">States</a></li>
                 <li>Aguascalientes</li>
             </ul>
         </nav>
@@ -94,28 +85,6 @@
                 <p>Aguascalientes enjoys year-round, hot & dry weather. The climate is ideal for taking part in a variety of outdoor sports and activities and for taking in the local culture, architecture and scenery. Rain is seldom a feature here; when the rains do come they tend to be during the months of  May thru November, but as with most monsoon areas, rains tend to be fierce and brief in the late afternoon, leaving the evenings dry and cooled off.</p>
             </section>
         </article>
-        <footer>
-            <table>
-                <tr>
-                    <td>
-                        <ul>
-                            <li><b>chingón.info</b></li>
-                            <li><span lang="es">chingón es algo muy chingón</span></li>
-                            <li>chingón is something very chingón</li>
-                            <li>– <a href="https://www.youtube.com/watch?v=zOqM1orQ-S4">MissaSinfonia</a></li>
-                            <li><a href="mailto:contact@chingon.info">contact@chingon.info</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><a href="">About page</a></li>
-                            <li><a href="">About me</a></li>
-                            <li><a href="" style="white-space: nowrap;">Design choice</a></li>
-                            <li><a href="">Credits</a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </footer>
+        {% include "footer.njk" %}
     </body>
 </html>
