@@ -222,6 +222,7 @@ sup a {
 body,
 html {
     color: #000;
+    font-size: 18px;
 }
 
 :lang(en) a, :lang(en) header a,
@@ -239,9 +240,7 @@ header :lang(nah) {
     color: #337d00; /* Adapted */
 }
 
-:lang(en) h1, :lang(en) h2, :lang(en) h3, :lang(en) h4, :lang(en) nav,
-:lang(es) h1, :lang(es) h2, :lang(es) h3, :lang(es) h4, :lang(en) nav,
-:lang(nah) h1, :lang(nah) h2, :lang(nah) h3, :lang(nah) h4, :lang(en) nav {
+h1, h2, h3, h4, nav {
     color: #8b6800; /* Adapted */
 }
 
@@ -261,9 +260,7 @@ header :lang(nah) {
         color: #58b900; /* Adapted */
     }
 
-    :lang(en) h1, :lang(en) h2, :lang(en) h3, :lang(en) h4, :lang(en) nav,
-    :lang(es) h1, :lang(es) h2, :lang(es) h3, :lang(es) h4, :lang(en) nav,
-    :lang(nah) h1, :lang(nah) h2, :lang(nah) h3, :lang(nah) h4, :lang(en) nav {
+    h1, h2, h3, h4, nav {
         color: #FECE1F; /* From codex */
     }
 
