@@ -220,8 +220,9 @@ html,
     color: #000;
 }
 
-a,
-header a {
+:lang(en) a, :lang(en) header a,
+:lang(es) a, :lang(es) header a,
+:lang(nah) a, :lang(nah) header a {
     color: #356bcb; /* Adapted */
 }
 
@@ -234,17 +235,16 @@ header :lang(nah) {
     color: #337d00; /* Adapted */
 }
 
-nav,
-h1,
-h2,
-h3,
-h4 {
-    color: #8b6800 !important; /* Adapted */
+:lang(en) h1, :lang(en) h2, :lang(en) h3, :lang(en) h4, :lang(en) nav,
+:lang(es) h1, :lang(es) h2, :lang(es) h3, :lang(es) h4, :lang(en) nav,
+:lang(nah) h1, :lang(nah) h2, :lang(nah) h3, :lang(nah) h4, :lang(en) nav {
+    color: #8b6800; /* Adapted */
 }
 
 @media (prefers-color-scheme: dark) {
-    a,
-    header a {
+    :lang(en) a, :lang(en) header a,
+    :lang(es) a, :lang(es) header a,
+    :lang(nah) a, :lang(nah) header a {
         color: #6bb1d1; /* From codex */
     }
 
@@ -257,18 +257,19 @@ h4 {
         color: #58b900; /* Adapted */
     }
 
-    nav,
-    h1,
-    h2,
-    h3,
-    h4 {
-        color: #FECE1F !important; /* From codex */
+    :lang(en) h1, :lang(en) h2, :lang(en) h3, :lang(en) h4, :lang(en) nav,
+    :lang(es) h1, :lang(es) h2, :lang(es) h3, :lang(es) h4, :lang(en) nav,
+    :lang(nah) h1, :lang(nah) h2, :lang(nah) h3, :lang(nah) h4, :lang(en) nav {
+        color: #FECE1F; /* From codex */
     }
 
     body,
-    html,
-    :lang(en) {
+    html {
         background-color: #1e1e1e;
+        color: #dedede;
+    }
+
+    :lang(en) {
         color: #dedede;
     }
     
