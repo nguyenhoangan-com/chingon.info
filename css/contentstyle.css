@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: Arial;
     src: local('Arial'), url('/arial.ttf');
     font-weight: 400;
@@ -20,13 +20,11 @@
     font-weight: 700;
     font-style: normal;
     font-display: block;
-}
+} */
 
 body {
     margin: 0 19px;
-    -webkit-font-smoothing: none;
-    font-family: Arial, Helvetica, sans-serif;
-    text-rendering: optimizeSpeed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #main {
@@ -43,7 +41,7 @@ body {
 }
 
 a {
-    color: #00e;
+    color: blue;
 }
 
 nav ul {
@@ -74,18 +72,11 @@ footer p,
 footer ul {
     font-size: 16px;
     line-height: 18px;
-    margin: 18px 0;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
-}
-
-footer svg {
-    fill: black;
-    height: 14px;
-    width: 14px;
 }
 
 footer table {
@@ -95,7 +86,7 @@ footer table {
 
 footer table tr td:first-of-type {
     width: 341px;
-    padding: 0 20px 0 0;
+    padding: 0;
 }
 
 footer table tr td:nth-of-type(2) {
@@ -125,20 +116,20 @@ h1 + .h1 {
 
 h2 {
     font-size: 36px;
-    margin: 0.8em 0;
+    margin: 2em 0 .75em;
 }
 
-.h3 {
+h3 {
     font-size: 28px;
     font-weight: 700;
-    margin: 72px 0 0.8em;
+    margin: 1.2em 0 0.8em;
 }
 
-.h4 {
+h4 {
     font-size: 20px;
     line-height: 27px;
     font-weight: 700;
-    margin: 72px 0 0.8em;
+    margin: 1.2em 0 0.8em;
 }
 
 p,
@@ -230,22 +221,56 @@ sup a {
     top: -0.2em;
 }
 
+:lang(es) {
+    color: #CE1125;
+}
+
+:lang(nah) {
+    color: #40905c;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 24px;
+    color: gray;
+}
+
+header :lang(es) {
+    color: #E35969;
+}
+
+header p strong,
+header :lang(es) strong {
+    color: #641d25;
+}
+
+header :lang(nah) {
+    color: #49ae6c;
+}
+header a {
+    color: #4d74f1;
+}
+
 @media (prefers-color-scheme: dark) {
     body,
     html {
         background-color: #1e1e1e;
-        color: #dedede;
+        color: #eee;
     }
 
     a {
-        color: #fff !important;
+        color: #a4b9fe;
     }
 
-    footer svg {
-        fill: white !important;
+    :lang(es) {
+        color: #ffb4bc;
     }
 
-    .h3,
+    :lang(nah) {
+        color: #a6ffc5;
+    }
+
+    h3,
     h1,
     h2,
     h4 {
@@ -259,6 +284,29 @@ sup a {
     .darkvideo {
         display: block;
     }
+
+    header p {
+        font-size: 20px;
+        line-height: 24px;
+        color: gray;
+    }
+    
+    header span:lang(es) {
+        color: #cb4a59;
+    }
+    
+    header p strong,
+    header span:lang(es) strong {
+        color: #e9ced1;
+    }
+
+    header a {
+        color: #4d74f1;
+    }
+
+    header span:lang(nah) {
+        color: #49ae6c;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -270,16 +318,16 @@ sup a {
 
 @media (max-width: 767px) {
     footer table tr td:first-of-type {
-        width: 190px;
+        width: 300px;
     }
 
     footer ul {
-        padding-left: 1em;
+        padding: 0;
     }
 
     h1 {
         font-size: 36px;
-        line-height: 36px;
+        line-height: 0px;
     }
 
     h2 {
@@ -296,11 +344,11 @@ sup a {
         max-width: 100%;
     }
 
-    .h3 {
+    h3 {
         font-size: 24px;
     }
 
-    .h4 {
+    h4 {
         font-size: 18px;
     }
 

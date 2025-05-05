@@ -41,11 +41,15 @@ body {
 }
 
 a {
-    color: #006847;
+    color: blue;
 }
 
-a:active {
-    color: black;
+:lang(es) {
+    color: #CE1125;
+}
+
+:lang(nah) {
+    color: #40905c;
 }
 
 nav ul {
@@ -264,7 +268,15 @@ sup a {
     }
 
     a {
-        color: #ceffdf !important;
+        color: #a4b9fe;
+    }
+
+    :lang(es) {
+        color: #ffb4bc;
+    }
+
+    :lang(nah) {
+        color: #a6ffc5;
     }
 
     h1,
