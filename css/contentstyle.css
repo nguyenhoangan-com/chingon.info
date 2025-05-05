@@ -205,6 +205,7 @@ header :lang(nah) {
     color: #337d00; /* Adapted */
 }
 
+nav,
 h1,
 h2,
 h3,
@@ -237,6 +238,7 @@ header :lang(es) strong {
         color: #58b900; /* Adapted */
     }
 
+    nav,
     h1,
     h2,
     h3,
@@ -247,7 +249,7 @@ header :lang(es) strong {
     body,
     html {
         background-color: #1e1e1e;
-        color: #fff;
+        color: #dedede;
     }
     
     header p strong,

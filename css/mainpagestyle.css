@@ -16,18 +16,6 @@ body {
     display: none;
 }
 
-a {
-    color: blue;
-}
-
-:lang(es) {
-    color: #CE1125;
-}
-
-:lang(nah) {
-    color: #40905c;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -229,38 +217,67 @@ sup a {
     top: -0.2em;
 }
 
-@media (prefers-color-scheme: dark) {
-    body,
-    html {
-        background-color: #1e1e1e;
-        color: #eee;
-    }
+/* Color contrast of 5.0 */
 
-    a {
-        color: #a4b9fe;
+body,
+html {
+    color: #000;
+}
+
+a,
+header a {
+    color: #356bcb; /* Adapted */
+}
+
+:lang(es) {
+    color: #bd2a2c; /* From codex */
+}
+
+:lang(nah),
+header :lang(nah) {
+    color: #337d00; /* Adapted */
+}
+
+nav,
+h1,
+h2,
+h3,
+h4 {
+    color: #8b6800; /* Adapted */
+}
+
+@media (prefers-color-scheme: dark) {
+    a,
+    header a {
+        color: #6bb1d1; /* From codex */
     }
 
     :lang(es) {
-        color: #ffb4bc;
+        color: #ff787a; /* Adapted */
     }
 
-    :lang(nah) {
-        color: #a6ffc5;
+    :lang(nah),
+    header :lang(nah) {
+        color: #58b900; /* Adapted */
     }
 
+    nav,
     h1,
     h2,
     h3,
     h4 {
-        color: #fff;
+        color: #FECE1F; /* From codex */
     }
 
-    .lightvideo {
-        display: none;
+    body,
+    html {
+        background-color: #1e1e1e;
+        color: #dedede;
     }
-
-    .darkvideo {
-        display: block;
+    
+    header p strong,
+    header :lang(es) strong {
+        color: #d98d56; /*natural mix of white and red*/
     }
 }
 
