@@ -16,10 +16,6 @@ body {
     display: none;
 }
 
-a {
-    color: blue;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -75,10 +71,6 @@ h1 {
     font-size: 48px;
     line-height: 40px;
     margin: 34px 0;
-}
-
-h1 + .h1 {
-    margin-top: -0.6em;
 }
 
 h2 {
@@ -193,91 +185,74 @@ sup a {
     top: -0.2em;
 }
 
-:lang(es) {
-    color: #CE1125;
+body,
+html {
+    color: #000;
 }
 
-:lang(nah) {
-    color: #40905c;
+/* Color contrast of 5.0 */
+a,
+header a {
+    color: #356bcb; /* Adapted */
+}
+
+:lang(es) {
+    color: #bd2a2c; /* From codex */
+}
+
+:lang(nah),
+header :lang(nah) {
+    color: #337d00; /* Adapted */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #8b6800; /* Adapted */
 }
 
 header p {
     font-size: 20px;
     line-height: 24px;
-    color: gray;
-}
-
-header :lang(es) {
-    color: #E35969;
 }
 
 header p strong,
 header :lang(es) strong {
-    color: #641d25;
-}
-
-header :lang(nah) {
-    color: #49ae6c;
-}
-header a {
-    color: #4d74f1;
+    color: #9e5c60; /*natural mix of black and red*/
 }
 
 @media (prefers-color-scheme: dark) {
-    body,
-    html {
-        background-color: #1e1e1e;
-        color: #eee;
-    }
-
-    a {
-        color: #a4b9fe;
+    a,
+    header a {
+        color: #6bb1d1; /* From codex */
     }
 
     :lang(es) {
-        color: #ffb4bc;
+        color: #ff787a; /* Adapted */
     }
 
-    :lang(nah) {
-        color: #a6ffc5;
+    :lang(nah),
+    header :lang(nah) {
+        color: #58b900; /* Adapted */
     }
 
-    h3,
     h1,
     h2,
+    h3,
     h4 {
+        color: #FECE1F; /* From codex */
+    }
+
+    body,
+    html {
+        background-color: #1e1e1e;
         color: #fff;
-    }
-
-    .lightvideo {
-        display: none;
-    }
-
-    .darkvideo {
-        display: block;
-    }
-
-    header p {
-        font-size: 20px;
-        line-height: 24px;
-        color: gray;
-    }
-    
-    header span:lang(es) {
-        color: #cb4a59;
     }
     
     header p strong,
-    header span:lang(es) strong {
-        color: #e9ced1;
-    }
-
-    header a {
-        color: #4d74f1;
-    }
-
-    header span:lang(nah) {
-        color: #49ae6c;
+    header :lang(es) strong {
+        color: #d98d56; /*natural mix of white and red*/
     }
 }
 
