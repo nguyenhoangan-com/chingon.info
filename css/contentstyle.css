@@ -187,8 +187,7 @@ sup a {
 /* Color contrast of 5.0 */
 /* Color contrast of 5.0 */
 body,
-html,
-:lang(en) {
+html {
     color: #000;
 }
 
@@ -242,10 +241,6 @@ header :lang(nah) {
     body,
     html {
         background-color: #1e1e1e;
-        color: #dedede;
-    }
-
-    :lang(en) {
         color: #dedede;
     }
     
