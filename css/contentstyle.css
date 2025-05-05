@@ -81,7 +81,7 @@ footer ul {
 
 footer table {
     max-width: 1024px;
-    margin: 0;
+    margin: 2em 0 0 0;
 }
 
 footer table tr td:first-of-type {
