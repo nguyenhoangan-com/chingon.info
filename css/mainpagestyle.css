@@ -111,10 +111,6 @@ table,
 ul {
     font-size: 23px;
     line-height: 27px;
-}
-
-header,
-section {
     max-width: 1024px;
 }
 
@@ -243,17 +239,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: #8b6800; /* Adapted */
-}
-
-header p {
-    font-size: 20px;
-    line-height: 24px;
-}
-
-header p strong,
-header :lang(es) strong {
-    color: #9e5c60; /*natural mix of black and red*/
+    color: #8b6800 !important; /* Adapted */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -276,7 +262,7 @@ header :lang(es) strong {
     h2,
     h3,
     h4 {
-        color: #FECE1F; /* From codex */
+        color: #FECE1F !important; /* From codex */
     }
 
     body,
