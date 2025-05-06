@@ -159,11 +159,10 @@ img {
     -ms-interpolation-mode: nearest-neighbor;
     image-rendering: pixelated;
     -moz-image-rendering: crisp-edges;
-    margin-top: 48px;
 }
 
 figure {
-    margin: 26px 0;
+    margin: 0 0;
     display: inline-block;
 }
 
@@ -178,8 +177,8 @@ figcaption {
 
 figcaption p {
     margin: 0;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 p img {
@@ -188,37 +187,6 @@ p img {
     height: auto;
 }
 
-sup {
-    vertical-align: baseline;
-    position: relative;
-    top: -0.5em;
-    line-height: 0;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-sup a {
-    text-decoration: none;
-}
-
-.footnotes {
-    margin-bottom: 48px;
-}
-
-.footnotes p {
-    display: inline;
-    font-size: 20px;
-    line-height: 22px;
-    hyphens: none;
-    -ms-hyphens: none;
-    -webkit-hyphens: none;
-}
-
-.footnotes sup {
-    top: -0.2em;
-}
-
-/* Color contrast of 5.0 */
 /* Color contrast of 5.0 */
 body,
 html {
@@ -226,9 +194,17 @@ html {
     font-size: 18px;
 }
 
-a,
-header a {
+a:link {
     color: #356bcb; /* Adapted */
+}
+a:visited {
+    color: #1b3a70; /* darker blue */
+}
+a:hover {
+    color: #f00; /* bright red to show responsiveness */
+}
+a:active {
+    color: #000; /* same as text */
 }
 
 :lang(es) {
@@ -249,9 +225,17 @@ h1, h2, h3, h4, nav {
 }
 
 @media (prefers-color-scheme: dark) {
-    a,
-    header a {
+    a:link {
         color: #6bb1d1; /* From codex */
+    }
+    a:visited {
+        color: #c6edff; /* brigher blue */
+    }
+    a:hover {
+        color: #ff3030; /* bright red to show responsiveness */
+    }
+    a:active {
+        color: #fff; /* same as text */
     }
 
     :lang(es) {
@@ -270,7 +254,7 @@ h1, h2, h3, h4, nav {
     body,
     html {
         background-color: #1e1e1e;
-        color: #dedede;
+        color: #fff;
     }
     
     #strong-title strong {
