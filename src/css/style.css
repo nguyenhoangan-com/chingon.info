@@ -207,27 +207,6 @@ a:active {
     color: #000; /* same as text */
 }
 
-:lang(es) {
-    color: #bd2a2c; /* From codex */
-}
-
-:lang(nah),
-:lang(yua) {
-    color: #337d00; /* Adapted */
-}
-
-h1, h2, h3, h4, nav {
-    color: #8b6800; /* Adapted */
-}
-
-#strong-title strong {
-    color: #9e5c60; /*natural mix of black and red*/
-}
-
-span#animated {
-    display: inline-block;
-}
-
 @media (prefers-color-scheme: dark) {
     a:link {
         color: #6bb1d1; /* From codex */
@@ -240,19 +219,6 @@ span#animated {
     }
     a:active {
         color: #fff; /* same as text */
-    }
-
-    :lang(es) {
-        color: #ff787a; /* Adapted */
-    }
-
-    :lang(nah),
-    :lang(yua) {
-        color: #58b900; /* Adapted */
-    }
-
-    h1, h2, h3, h4, nav {
-        color: #FECE1F; /* From codex */
     }
 
     body,
